@@ -139,8 +139,7 @@ Resources:
     Properties:
       Name: "colorteller-blue"
       DnsConfig:
-        NamespaceId:
-          'Fn::ImportValue': !Sub "${EKSServicesDomain}"
+        NamespaceId: !Sub ${EKSServicesDomain}
         DnsRecords:
           - Type: A
             TTL: 300

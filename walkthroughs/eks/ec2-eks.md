@@ -6,8 +6,6 @@ NOTE: Before you start with this part, make sure you've gone through the [base d
 ```bash
 $ kubectl -n appmesh-demo apply -f eks-color-example.yaml
 
-# create a color-mesh.svc.cluster.local namespace in Cloud Map
-
 $ source ec2-eks.env
 $ ./vpc.sh
 $ ./ec2-cluster.sh
